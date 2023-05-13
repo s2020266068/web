@@ -93,12 +93,13 @@
     <!-- form contact us -->
     <div class="form_contactus" style="text-align: center; width: auto;">
       <h2 style="margin-top: 50px; margin-bottom: 50px;">Let's Start a Conversation</h2>
-      <form>
+      <form action="/action_page.php">
         <label>First Name:</label>
         <input
         type="text"
         placeholder="First Name"
         style="padding: 5px; margin-bottom: 15px;"
+        required
         />
         <br>
         <label>Last Name:</label>
@@ -106,6 +107,7 @@
         type="text"
         placeholder="Last Name"
         style="padding: 5px; margin-bottom: 15px;"
+        required
         />
         <br>
         <label>Email Address:</label>
@@ -117,9 +119,10 @@
         <br>
         <label>Phone Number:</label>
         <input
-        type="tel"
+        type="tel" minlength="11" maxlength="11"
         placeholder="03xx-xxxxxxx"
         style="padding: 5px; margin-bottom: 15px;"
+        required
         />
         <br>
         <label>Address:</label>
@@ -127,15 +130,16 @@
         type="text-area"
         placeholder="House Address"
         style="padding: 5px; margin-bottom: 15px;"
+        required
         />
         <br>
         <label>Your Message?</label>
-        <textarea name="message" rows="1" placeholder="Your Message?" style="padding: 5px;"></textarea>
+        <textarea name="message" rows="1" placeholder="Your Message?" style="padding: 5px;"
+        required></textarea>
         <br>
         <br>
         <p style="margin:0px; font-size:10px ;">Please note: all feilds are required.</p>
         <br>
-    </form>
       <button class="btn btn-outline-success" type="submit">Submit</button>
     </form>
   </div>
